@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
-//Clase
+//Componente basado en Clase
 // class Componente extends Component {
 //   render() {
 //     return <h2>{this.props.msg}</h2>;
 //   }
 // }
 
-//Function
+//Componente funcional
 // function Componente(props) {
 //   return <h2>{props.msg}</h2>;
 // }
 
-//Función expresada
+//Componente con función expresada
 const Componente = (props) => <h2>{props.msg}</h2>;
 
 export default Componente;

@@ -4,7 +4,7 @@ import data from '../helpers/data.json';
 function ListElement(props) {
   return (
     <li>
-      <a href={props.el.web}>{props.el.name}</a>
+      <a href={props.element.web}>{props.element.name}</a>
     </li>
   );
 }
@@ -20,7 +20,7 @@ export default class RenderizadoElementos extends Component {
   render() {
     return (
       <div>
-        <h2>Renderizado de Elementos</h2>
+        <h2>Renderizado de Elementoss</h2>
         <h3>Estaciones del año</h3>
         <ol>
           {this.state.seasons.map((season) => (
@@ -29,8 +29,8 @@ export default class RenderizadoElementos extends Component {
         </ol>
         <h3>Frameworks Frontend JS</h3>
         <ul>
-          {data.frameworks.map((el) => (
-            <ListElement key={el.id} el={el} />
+          {data.frameworks.map((element) => (
+            <ListElement key={element.id} element={element} />
           ))}
         </ul>
       </div>
