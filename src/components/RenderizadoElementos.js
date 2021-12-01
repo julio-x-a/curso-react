@@ -20,7 +20,7 @@ export default class RenderizadoElementos extends Component {
   render() {
     return (
       <div>
-        <h2>Renderizado de Elementoss</h2>
+        <h2>Renderizado de Elementos</h2>
         <h3>Estaciones del año</h3>
         <ol>
           {this.state.seasons.map((season) => (
